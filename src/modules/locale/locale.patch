@@ -1,0 +1,28 @@
+--- locale.module.orig	2011-02-21 09:44:39.000000000 -0300
++++ locale.module	2011-03-06 15:11:44.000000000 -0300
+@@ -385,6 +385,25 @@
+     }
+   }
+ 
++  //START PATCH - para o site em Kaingang exibir pt-br ao invés de ingles para traduções incomple
++  //return ($locale_t[$langcode][$string] === TRUE ? $string : $locale_t[$langcode][$string]);                                                              
++                                                                                                                                                            
++  if ($langcode == 'kgp') {                                                                                                                                 
++    //tratamento especial para Kaingang (kgp)                                                                                                               
++    if ($locale_t[$langcode][$string] === TRUE) {                                                                                                       
++      //se não há tradução para Kaingang, usamos tradução portuguesa                                             
++      return locale($string, 'pt-br');                                                                                                                      
++    }                                                                                                                                                       
++    else {                                                                                                                                                  
++      //a string está traduzida para Kaingang!                                                                                                              
++      return $locale_t[$langcode][$string];                                                                                                                 
++    }                                                                                                                                                       
++  }                                                                                                                                                         
++  else {                                                                                                                   
++    //outras línguas, como português (pt-br), processamos normalmente       
++    return ($locale_t[$langcode][$string] === TRUE ? $string : $locale_t[$langcode][$string]);                                                              
++  }                                                                                                                                                         
++
+   return ($locale_t[$langcode][$string] === TRUE ? $string : $locale_t[$langcode][$string]);
+ }
+ 

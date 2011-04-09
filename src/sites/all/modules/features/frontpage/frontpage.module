@@ -1,0 +1,18 @@
+<?php
+
+include_once('frontpage.features.inc');
+
+function frontpage_menu() {
+  $items['front'] = array(
+    'title' => '',
+    'access callback' => TRUE,
+    'page callback' => 'frontpage_front',
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+function frontpage_front() {
+  return ' ';
+}

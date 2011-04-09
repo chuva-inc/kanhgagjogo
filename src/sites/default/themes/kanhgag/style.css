@@ -1,0 +1,273 @@
+* { margin:0; padding:0; }
+body, div, span, p, a, img, ul, ol, li, table, th, tr, td, form, fieldset, legend, dl, dt, dd, blockquote, applet, object { border:0; }
+body { 
+  padding: 0; 
+  font: 16px/1.5em "arial",sans-serif; 
+  color: #303030; 
+  text-align: center; 
+}
+
+/* obecne odkazy --------------------------------------------------------------- */
+a {color:#c92109}
+a:hover {text-decoration: none;}
+
+/* nadpisy --------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 { margin:15px 0 7px 0; }
+h1 { font-size:180%; }
+h2 { font-size:140%; font-weight: normal;}
+h3 { font-size:105%; }
+h4 { font-size:120%; }
+h5 { font-size:100%; }
+
+#layout { 
+  margin:0 auto; 
+  text-align:left; 
+}
+
+#header { position:relative; background: #c92109;}
+  
+#logo {
+  font-family: 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
+  position: relative; 
+  overflow: hidden; 
+  width: 550px; height: 108px;
+  font-size:230%;
+  margin: 0;
+  line-height: 108px;
+  text-align: left;
+}
+#logo a{
+  text-decoration: none;
+  color: #ffdd00;
+  padding: 0px 10px 7px 0; 
+  font-weight: bold;
+}
+      
+#logo a:hover span {
+   font-weight: bold;
+}
+      
+#navigation{
+  line-height: 40px;
+  display: block;
+  top: 0;
+  font-size: 95%;
+  background: #b00;
+  border-top: 1px solid #a00;
+  border-bottom: 2px solid #900;
+}
+
+#navigation ul {
+  margin: 0;
+}
+
+#navigation ul li{
+  display: inline;
+}
+ 
+#navigation li a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+    
+#navigation a:hover {
+  color: #fff;
+}
+      
+#footer {
+  font-size: 11px;
+  line-height: 1.2em;
+  background: #900;
+  color: #cc5;
+  clear:both;
+  border-top: 60px solid white;
+}
+
+#footer a{
+  color: #b1b1b1;
+}
+
+#footer-inside {
+  width:746px; 
+  margin:0 auto; 
+  text-align:left; 
+  padding: 26px 0;
+}
+      
+      #footer-inside p {
+      margin-top: 0;
+      margin-bottom: 0;
+      }
+      
+      #copyright {
+      float: left; 
+      width: 300px;
+      }
+      
+      #dont-delete-this{
+      margin: 0 0 0 323px;
+      text-align: right;
+      }
+
+/* odstavce -------------------------------------------------------------------- */
+p { margin:15px 0; line-height: 24px; font-size: 95%}
+
+.contents p {color: #fff; margin-top: 10px;}
+
+/* tabulky --------------------------------------------------------------------- */
+table { margin:15px 0; border: 1px solid #cdcdcd; border-collapse:collapse; border-spacing:0; font-size:100%; width: 100%;}
+th { text-align:center; font-weight:bold; border: 1px solid #cdcdcd;}
+th, td { padding:4px 6px; border: 1px solid #cdcdcd;}
+tr.table-top {background: #e5e5e5; font-weight: bold;}
+
+/* seznamy --------------------------------------------------------------------- */
+ul, ol { display:block; margin:15px 0 15px 40px; }
+ul ul, ul ul ul, ol ol, ol ol ol { margin:0; margin-left:20px; }
+ol { list-style-type:decimal; }
+ol ol { list-style-type:upper-alpha; }
+ol ol ol {list-style-type:lower-alpha; }
+li { display:list-item; }
+ul li a { text-decoration:underline; }
+
+/* definice -------------------------------------------------------------------- */
+dl { margin:15px 0; }
+dt { font-weight:bold; }
+dd { margin-left:30px; }
+
+/* ostatni --------------------------------------------------------------------- */
+fieldset { margin:15px 0; padding:10px; border:1px solid #CCC; }
+legend { margin-left:10px; font-size:100%; font-weight:bold; color:#000; }
+abbr, acronym, .help { border-bottom:1px dotted #CCC; cursor:help; }
+blockquote { margin:15px 20px; font-style:italic; }
+del, .del { text-decoration:line-through; }
+strong, .strong { font-weight:bold; }
+cite, em, q, var { font-style:italic; }
+code, kbd, samp  {font-family:monospace; font-size:110%; }
+hr { display:block; height:1px; margin:10px 0; padding:0; border:0 solid #CCC; background:#CCC; color:#CCC;} 
+.light {padding: 4px 5px; background: #ac0001; text-decoration: none;} .light:hover {color: #fff;}
+.noscreen { display:none; }
+/*add by laxman*/
+#logo h1
+ {
+	 font-size:130%;
+	 height:100px;
+         padding: 0 10px;
+ }
+ #logo h1 a
+  {
+	
+	  height:78px;
+  }
+#logo h1 img
+ {
+float:left;
+height:60px;
+padding-top:10px;
+width:66px;
+	
+ }
+.submitted {
+  font-size: 12px;
+  color: #666;
+}
+
+#header-region {
+  position: absolute;
+  margin-left: 400px;
+  top: 0;
+  color: white;
+}
+
+#header-region .special-chars {
+  margin-top: 2em;
+  margin-left: -10em;
+}
+
+#header-region div,
+#header-region label,
+#header-region li {
+  display: inline;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#header-region a {
+  color: white;
+}
+
+.special-chars {
+  position: absolute;
+}
+
+#main {
+  padding: 0 20px;
+}
+.mainpage {
+  padding: 0 20px;
+}
+h1.title {
+  padding: 25px 20px 10px;
+  margin: 0;
+  background: #fee;
+  color: #942;
+  font-size: 29px;
+}
+
+.messages {
+  background: #ddd;
+  border: 1px solid #999;
+  padding: 10px;
+  margin: 10px 20px;
+}
+
+.node {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.node h2.title a {
+  text-decoration: none;
+}
+.node h2.title a:hover {
+  text-decoration: underline;
+}
+
+.odd td {
+  background: #f9f9f9;
+}
+
+.even td {
+  background: #fff;
+}
+
+.view-conversas .views-field-name {
+  font-size: 75%;
+  line-height: 1em;
+  padding-bottom: 10px;
+  color: #777;
+}
+
+.view-conversas .views-field-name a {
+  color: #777;
+}
+
+.comment {
+  border: 1px solid #edd;
+  margin-bottom: 10px;
+  padding: 10px;  
+}
+
+.comment .links {
+  float: right;
+}
+.sidebar-left #main {
+  margin-left: 170px;
+}
+.sidebar {
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  float: left;
+  width: 169px;
+}

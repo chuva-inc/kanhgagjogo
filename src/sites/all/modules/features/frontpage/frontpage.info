@@ -1,0 +1,7 @@
+core = "6.x"
+dependencies[] = "views"
+description = "Builds the frontpage"
+features[views][] = "front_image"
+features[views_api][] = "api:2"
+name = "Frontpage"
+package = "Features"
