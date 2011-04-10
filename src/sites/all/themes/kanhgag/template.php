@@ -1,5 +1,4 @@
 <?php
-// $Id: template.php,v 1.1.2.2 2009/01/10 22:42:18 ebizondrupalservices Exp $
 
 /**
  * Sets the body-tag class attribute.
