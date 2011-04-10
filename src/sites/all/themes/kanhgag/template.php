@@ -5,7 +5,7 @@
  *
  * Adds 'sidebar-left', 'sidebar-right' or 'sidebars' classes as needed.
  */
-function phptemplate_body_class($sidebar_left, $sidebar_right) {
+function kanhgag_body_class($sidebar_left, $sidebar_right) {
   if ($sidebar_left != '' && $sidebar_right != '') {
     $class = 'sidebars';
   }
@@ -30,7 +30,7 @@ function phptemplate_body_class($sidebar_left, $sidebar_right) {
  *   An array containing the breadcrumb links.
  * @return a string containing the breadcrumb output.
  */
-function phptemplate_breadcrumb($breadcrumb) {
+function kanhgag_breadcrumb($breadcrumb) {
   if (!empty($breadcrumb)) {
     return '<div class="breadcrumb">'. implode(' › ', $breadcrumb) .'</div>';
   }
@@ -39,7 +39,7 @@ function phptemplate_breadcrumb($breadcrumb) {
 /**
  * Allow themable wrapping of all comments.
  */
-function phptemplate_comment_wrapper($content, $type = null) {
+function kanhgag_comment_wrapper($content, $type = NULL) {
   static $node_type;
   if (isset($type)) $node_type = $type;
 
@@ -54,7 +54,7 @@ function phptemplate_comment_wrapper($content, $type = null) {
 /**
  * Override or insert PHPTemplate variables into the templates.
  */
-function _phptemplate_variables($hook, $vars) {
+function _kanhgag_variables($hook, $vars) {
   if ($hook == 'page') {
 
     if ($secondary = menu_secondary_local_tasks()) {
@@ -78,7 +78,7 @@ function _phptemplate_variables($hook, $vars) {
  *
  * @ingroup themeable
  */
-function phptemplate_menu_local_tasks() {
+function kanhgag_menu_local_tasks() {
   $output = '';
 
   if ($primary = menu_primary_local_tasks()) {
