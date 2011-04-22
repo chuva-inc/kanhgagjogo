@@ -1,0 +1,32 @@
+.highlight-block-region {
+  float: left;
+  width: 33%;
+}
+
+#highlight-blocks-left .block {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+#highlight-blocks-middle .block {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#highlight-blocks-right .block {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+/* News teaser */
+.views-field-teaser {
+  font-size: .9em;
+  line-height: 1.2em;
+}
+
+/* Youtube video */
+.highlight-block-region object {
+  height: 240px;
+  width: 100%;
+}
+

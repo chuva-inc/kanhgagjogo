@@ -73,6 +73,20 @@
         <?php print $messages; ?>
 	      <?php print $tabs; ?>
 
+        <?php if ($home_left || $home_middle || $home_right): ?>
+          <div id="highlight-blocks" class="clear-block">
+            <div id="highlight-blocks-left" class="highlight-block-region">
+              <?php print $home_left; ?>
+            </div>
+            <div id="highlight-blocks-middle" class="highlight-block-region">
+              <?php print $home_middle; ?>
+            </div>
+            <div id="highlight-blocks-right" class="highlight-block-region">
+              <?php print $home_right; ?>
+            </div>
+          </div>
+        <?php endif; ?>
+
         <div class="mainpage clear-block">
           <?php print $content; ?>
         </div>
