@@ -24,18 +24,27 @@ h5 { font-size:100%; }
   text-align:left; 
 }
 
+#main,
+#logo {
+  margin: auto;
+  max-width: 950px;
+  padding: 0 20px;
+}
+
 #header { position:relative; background: #c92109;}
   
 #logo {
   font-family: 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
   position: relative; 
   overflow: hidden; 
-  width: 550px; height: 108px;
+  max-width: 960px;
+  height: 108px;
   font-size:230%;
-  margin: 0;
+  margin: auto;
   line-height: 108px;
   text-align: left;
 }
+
 #logo a{
   text-decoration: none;
   color: #ffdd00;
@@ -59,6 +68,7 @@ h5 { font-size:100%; }
 
 #navigation ul {
   margin: 0;
+  text-align: center;
 }
 
 #navigation ul li{
@@ -200,9 +210,6 @@ width:66px;
   position: absolute;
 }
 
-#main {
-  padding: 0 20px;
-}
 .mainpage {
   padding: 0 20px;
 }
