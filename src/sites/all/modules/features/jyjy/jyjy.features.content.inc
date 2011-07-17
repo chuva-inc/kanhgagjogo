@@ -11,9 +11,10 @@ function jyjy_content_default_fields() {
     'field_name' => 'field_ema',
     'type_name' => 'jyjy',
     'display_settings' => array(
+      'weight' => 0,
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -62,7 +63,7 @@ function jyjy_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Emã',
-      'weight' => '-1',
+      'weight' => 0,
       'description' => '',
       'type' => 'nodereference_select',
       'module' => 'nodereference',
@@ -74,9 +75,10 @@ function jyjy_content_default_fields() {
     'field_name' => 'field_metade',
     'type_name' => 'jyjy',
     'display_settings' => array(
+      'weight' => '-2',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -112,10 +114,60 @@ Vãnhjẽnky',
       ),
       'default_value_php' => NULL,
       'label' => 'Kamẽ / Kanhru',
-      'weight' => '-3',
+      'weight' => '-2',
       'description' => '',
       'type' => 'optionwidgets_select',
       'module' => 'optionwidgets',
+    ),
+  );
+
+  // Exported field: field_pronunciation
+  $fields['jyjy-field_pronunciation'] = array(
+    'field_name' => 'field_pronunciation',
+    'type_name' => 'jyjy',
+    'display_settings' => array(
+      'weight' => '-4',
+      'parent' => '',
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'swftools_no_file',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'filefield',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'filefield',
+    'active' => '1',
+    'list_field' => '0',
+    'list_default' => 1,
+    'description_field' => '0',
+    'widget' => array(
+      'file_extensions' => 'mp3',
+      'file_path' => '',
+      'progress_indicator' => 'bar',
+      'max_filesize_per_file' => '',
+      'max_filesize_per_node' => '',
+      'label' => 'Pronúncia',
+      'weight' => '-4',
+      'description' => '',
+      'type' => 'filefield_widget',
+      'module' => 'filefield',
     ),
   );
 
@@ -124,9 +176,10 @@ Vãnhjẽnky',
     'field_name' => 'field_ra',
     'type_name' => 'jyjy',
     'display_settings' => array(
+      'weight' => '-3',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -158,15 +211,14 @@ ror',
       'default_value' => array(
         '0' => array(
           'value' => '',
-          '_error_element' => 'default_value_widget][field_ra][0][value',
         ),
       ),
       'default_value_php' => NULL,
       'label' => 'Rá',
-      'weight' => '-4',
-      'description' => 'Use apenas: téj ou ror  (sem maiúsculas)',
-      'type' => 'text_textfield',
-      'module' => 'text',
+      'weight' => '-3',
+      'description' => '',
+      'type' => 'optionwidgets_buttons',
+      'module' => 'optionwidgets',
     ),
   );
 
@@ -175,9 +227,10 @@ ror',
     'field_name' => 'field_ranja',
     'type_name' => 'jyjy',
     'display_settings' => array(
+      'weight' => '3',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -213,7 +266,7 @@ ror',
       ),
       'default_value_php' => NULL,
       'label' => 'Ũ tỹ rán ja',
-      'weight' => '2',
+      'weight' => '3',
       'description' => 'informa quem fez o registro desse ítem',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -225,9 +278,10 @@ ror',
     'field_name' => 'field_tifi',
     'type_name' => 'jyjy',
     'display_settings' => array(
+      'weight' => '-1',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -264,10 +318,10 @@ ti',
       ),
       'default_value_php' => NULL,
       'label' => 'Ti/Fi',
-      'weight' => '-2',
-      'description' => 'Use apenas: ti ou fi (sem maiúsculas)',
-      'type' => 'text_textfield',
-      'module' => 'text',
+      'weight' => '-1',
+      'description' => '',
+      'type' => 'optionwidgets_buttons',
+      'module' => 'optionwidgets',
     ),
   );
 
@@ -275,6 +329,7 @@ ti',
   // Included for use with string extractors like potx.
   t('Emã');
   t('Kamẽ / Kanhru');
+  t('Pronúncia');
   t('Rá');
   t('Ti/Fi');
   t('Ũ tỹ rán ja');
